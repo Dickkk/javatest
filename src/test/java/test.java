@@ -366,9 +366,10 @@ public class test {
     public  void testEnv()
     {
         System.out.println(System.getProperties());
+        getEnv();
     }
-    @Test
-    public String getEnv(String key)
+
+    public String getEnv()
     {
         Properties props=new Properties();
         try {
@@ -381,12 +382,6 @@ public class test {
         } catch (IOException e) {
             return null;
         }
-
     }
-
-
-
-
-
 }
 

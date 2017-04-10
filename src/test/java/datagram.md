@@ -9,3 +9,7 @@
 4.  客户端 调用channel.send(bb,host); 向服务器发送报文。
 5.  服务端 SocketAddress socketAddress= channel.receive(bb); 接收来自客户端的请求，并返回socket地址。
 
+
+
+使用了selector进行选择。
+
